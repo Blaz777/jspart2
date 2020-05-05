@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>RETURN IN SPREMENLJIVKE (19)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>RETURN IN SPREMENLJIVKE (19)
+<p><em><font color="red">Le mrtvi doèakajo konec vojne.&nbsp;&nbsp;&nbsp;<small><sub>(Platon)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>RETURN, LOKALNE IN GLOBALNE SPREMENLJIVKE</big>
+</center>
+
+<ul type="circle">
+	<li> Ukaz "return" je poziv k vrnitvi vrednosti, ki je rezultat funkcije.
+	<li> Funkcije, ki izraèunajo neko vrednost, morajo vedno vsebovati ukaz "return".
+	<li> Funkcija v spodnjem primeru mora vrniti vrednost zmnožka dveh števil (a in b).
+<pre>function prod(a,b)
+{
+x=a*b;
+return x;
+}</pre>
+	<li> Ob klicu zgornje funkcije moramo podati tej funkciji še dva prametra, števili a in b.
+<pre>zmnozek=prod(2,3);</pre>
+	<li> Vrednost, ki jo vrne funkcija prod( ), je 6, shranjena pa je v spremenljivki, imenovani "zmnozek"!.
+	<li> Èe deklariramo spremenljivko znotraj funkcije, jo lahko tudi uporabimo samo znotraj taiste funkcije.
+	<li> Zunaj funkcije, v kateri je spremenljivka deklarirana, je ta spremenljivka neprepoznavna in neveljavna.
+	<li> Spremenljivke, ki so prepoznavne in veljavne samo znotraj funkcije, so lokalne spremenljivke.
+	<li> Ob izstopu iz notranjega okolja funkcije je lokalna spremenljivka razvrednotena in unièena.
+	<li> Spremenljivko istega imena lahko torej uporabimo hkrati v veè funkcijah, a se vendarle med seboj ne pomešajo, saj velja vsaka od njih le v funkciji, v kateri je deklarirana.
+	<li> Èe deklariramo spremenljivko zunaj funkcije, je veljavna znotraj vseh funkcij, ki jih vsebuje spletna stran.
+	<li> Zunanje deklarirane spremenljivke postanejo veljavne, ko jih deklariramo, njihova veljavnost pa preneha takrat, ko zapremo spletno stran.
+	<li> Spremenljivke, ki so veljavne tako zunaj kot tudi znotraj vseh funkcij na spletni strani, imenujemo globalne spremenljivke.
+</ul>
+
+<img src="19js01.jpg" border=2></a>
+<img src="19js02.jpg" border=2></a><p>Slika 1 in 2: Return in spremenljivke - koda in videz spletne strani</p>
+
+
+<center>
+<big>VAJA 19: UKAZ RETURN IN VELJAVNOST SPREMENLJIVK V FUNKCIJAH
+</big>
+</center>
+
+<p>1. Izdelaj spletno stran, ki bo izgledala tako, kot kažeta sliki 1 in 2. Datoteko poimenuj "19apriimek.html". Ne pozabi na konènico ".html".</p>
+
+<p><font color="red">POZOR: Najprej NATANÈNO izdelaj vajo v tej uèni enoti in jo pokaži profesorju, nato zapiši odgovore na spodnja vprašanja.</font></p>
+
+<p>2. V kodo primera v tej uèni enoti vstavi spodaj navedene komentarje na ustrezna mesta, ki jih ti komentarji pojasnjujejo.</p>
+<p>//Lokalni spremenljivki priredimo vrednost, ki je zmnožek parametrov funkcije.</p>
+<p>//Napoved lokalne spremenljivke.</p>
+<p>//napoved globalne spremenljivke.</p>
+<p>//Globalni spremenljivki priredimo vrednost, ki je zmnožek parametrov funkcije.</p>
+<p>//Funkcijo poklièemo in ji podamo tudi dva dejanska parametra.</p>
+
+3. Kodo primera v tej uèni enoti spremeni tako, da bo vsebovala še eno funkcijo, ki bo izraèunala razliko podanih parametrov.<br>
+4. Kodo primera v tej uèni enoti spremeni tako, da bo vsebovala še eno funkcijo, ki bo izraèunala zmnožek podanih parametrov.<br>
+5. Kodo primera v tej uèni enoti spremeni tako, da bo vsebovala še eno funkcijo, ki bo izraèunala koliènik pri deljenju prvega podanega parametra z drugim podanim parametrom.<br>
+6. Kodo primera v tej uèni enoti spremeni tako, da bo vsebovala še eno funkcijo, ki bo izraèunala ostanek pri deljenju prvega podanega parametra z drugim podanim parametrom.</p><br><br>
+
+<b>1. Vprašanja za usmerjanje pozornosti in usvajanje novih besed:</b><br>
+1. Kakšna je naloga ukaza "return"?<br>
+2. Katere funkcije morajo vsebovati ukaz "return"?<br>
+3. Kaj je osnovna znaèilnost lokalnih spremenljivk?<br>
+4. Kaj je osnovna znaèilnost globalnih spremenljivk?<br>
+<br>
+<b>2. Zapiši od ene do pet kljuènih besed, ki povzemajo vsebino te uène enote.</b><br><br>
+
+<b>3. Vprašanja za razmislek in povezovanje z lastno izkušnjo:</b><br>
+1. Koliko funkcij je zapisanih v primeru na sliki 1?<br>
+2. Koliko parametrov vsebujejo funkcije na sliki 1?<br>
+3. Katere spremenljivke so deklarirane zunaj funkcij na sliki 1?<br>
+4. Katere spremenljivke so deklarirane znotraj funkcij na sliki 1?<br>
+5. Koliko ukazov za zapis vsebuje skript na sliki 1?<br>
+6. Koliko ukazov za zapis v skriptu se dejansko izvede na sliki 2?<br>
+7. Katera od deklariranih spremenljivk se na spletni strani ni zapisala?<br>
+8. Katera od deklariranih spremenljivk je globalna in katera je lokalna spremenljivka?<br>
+<br>
+<b>4. Domaèa naloga: </b><br>
+1. V zvezek prepiši misel, ki je zapisana na zaèetku uène enote z rdeèimi èrkami. Zabeleži nekaj lastnih misli, ki se ti utrnejo ob razmišljanju o njej.<br>
+2. Odgovori na vprašanja, na katere nisi uspel/a odgovoriti v šoli.
+
+<br><br>
+<font color="red"><b>5. DODATNO DELO: </b>
+<p>1. Izdelaj spletno stran, ki bo izgledala tako, kot kažeta sliki 1 in 2. Spremeni le raèunsko operacijo, ki jo funkcija izvede. To pot naj bo raèunska operacija deljenje. Izpise vseh stavkov na spletni strani moraš seveda ustrezno prilagoditi. Datoteko poimenuj "19bpriimek.html". Ne pozabi na konènico ".html".</p>
+<p>2. Izdelaj spletno stran, ki bo izgledala tako, kot kažeta sliki 1 in 2. Spremeni le raèunsko operacijo, ki jo funkcija izvede. To pot naj bo raèunska operacija seštevanje. Izpise vseh stavkov na spletni strani moraš seveda ustrezno prilagoditi. Datoteko poimenuj "19cpriimek.html". Ne pozabi na konènico ".html".</p>
+<p>3. Izdelaj spletno stran, ki bo izgledala tako, kot kažeta sliki 1 in 2. Spremeni le raèunsko operacijo, ki jo funkcija izvede. To pot naj bo raèunska operacija odštevanje. Izpise vseh stavkov na spletni strani moraš seveda ustrezno prilagoditi. Datoteko poimenuj "19dpriimek.html". Ne pozabi na konènico ".html".</p>
+</font ><br>
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>
